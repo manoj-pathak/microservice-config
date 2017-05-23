@@ -1,6 +1,6 @@
 server:
   port: 8090
-  contextPath: /user-service
+#  contextPath: /user-service
 
 
 eureka:
