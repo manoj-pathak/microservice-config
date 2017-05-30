@@ -32,6 +32,10 @@ zuul:
       path: /user-service/**
       stripPrefix: false
       serviceId: user-microservice
+    task-microservice:
+      path: /task-service/**
+      stripPrefix: false
+      serviceId: task-microservice
 
 spring:
   aop:
