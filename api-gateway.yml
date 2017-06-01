@@ -40,3 +40,14 @@ zuul:
 spring:
   aop:
     proxy-target-class: true
+
+
+# Hystrix has low delay tolerance threshold and hence we bump it to 5 seconds.
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          strategy: SEMAPHORE
+          semaphore:
+            timeoutInMilliseconds: 5000
